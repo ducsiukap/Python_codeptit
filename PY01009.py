@@ -6,5 +6,5 @@ if __name__ == '__main__':
     for i in s:
         lwr += (i >= 'a')
     
-    print(s.lower if lwr >= (len(s) - lwr) else s.upper)
+    print(s.lower() if lwr >= (len(s) - lwr) else s.upper())
 
