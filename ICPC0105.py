@@ -1,4 +1,3 @@
-from curses.ascii import isdigit
 
 T = int(input())
 

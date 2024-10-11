@@ -8,13 +8,13 @@ def initPrime(n:int)->list:
                 P[j] = 0
     return P
 
-P = initPrime(1000000)
-mark = dict()
-n = int(input())
-a = list(map(int, input().split()))
-for num in a:
-    if (P[num] == 1):
-        mark[num] = mark.get(num, 0)+1
-        
-for k, v in mark.items():
-    print(k, v)
+p = initPrime(1000)
+n, m = map(int, input().split())
+a = []
+for i in range(n):
+    a.append(list(map(int, input().split())))
+for i in range(n):
+    for j in range(m):
+        print(p[a[i][j]], end=' ')
+    print()
+
