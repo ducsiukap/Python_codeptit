@@ -8,9 +8,13 @@ while i * i <= l :
     i += 1
 for i in range(2, l + 1) : 
     p = a[i]
-    if a[i] == i and i**8 <= n: s += 1
-    else: 
-        q = a[i // a[i]]
-        if p * q == i and p != q : 
+    q = a[i // a[i]]
+    if p * q == i and q != 1 and p != q : 
+        s += 1
+        # print(i, end=' ')
+
+    elif a[i] == i :
+        if i ** 8 <= n : 
             s += 1
+            # print(i, end=' ')
 print(s)
